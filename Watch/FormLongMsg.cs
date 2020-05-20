@@ -36,6 +36,7 @@ namespace Watch
             matchParent();
 
             metroTabControl1.SelectedTab = metroTabPage1;
+            
         }
 
         public void matchParent() {

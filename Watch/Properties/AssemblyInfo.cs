@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("WatchXA")]
-[assembly: AssemblyDescription("一个精美的具有计时器功能的桌面时钟挂件")]
+[assembly: AssemblyTitle("Metro Watch")]
+[assembly: AssemblyDescription("MetroWatch计时器，和WatchXA存档互通")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ZYFDroid")]
-[assembly: AssemblyProduct("WatchXA")]
+[assembly: AssemblyProduct("Metro Watch")]
 [assembly: AssemblyCopyright("ZYFDroid")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("51dc3873-4da0-4aea-956c-e416950862b2")]
+[assembly: Guid("C7A24684-4FA8-4340-AF61-440413D1500C")]
 
 // 程序集的版本信息由下列四个值组成: 
 //
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 //可以指定所有这些值，也可以使用“生成号”和“修订号”的默认值，
 // 方法是按如下所示使用“*”: :
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.0.2.3")]
-[assembly: AssemblyFileVersion("2.0.2.3")]
+[assembly: AssemblyVersion("3.0.0.1")]
+[assembly: AssemblyFileVersion("3.0.0.1")]

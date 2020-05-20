@@ -156,7 +156,7 @@
             legend2.Name = "Legend1";
             legend2.TableStyle = System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Tall;
             this.chartLine.Legends.Add(legend2);
-            this.chartLine.Location = new System.Drawing.Point(0, 0);
+            this.chartLine.Location = new System.Drawing.Point(20, 22);
             this.chartLine.Name = "chartLine";
             this.chartLine.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series2.BorderWidth = 3;
@@ -235,7 +235,7 @@
             this.metroTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabControl1.Location = new System.Drawing.Point(20, 60);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 4;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(493, 355);
             this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTabControl1.TabIndex = 2;
@@ -334,8 +334,10 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 38);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Size = new System.Drawing.Size(485, 313);
+            this.tabPage8.Style = MetroFramework.MetroColorStyle.Black;
             this.tabPage8.TabIndex = 3;
             this.tabPage8.Text = "折线图";
+            this.tabPage8.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.tabPage8.VerticalScrollbarBarColor = false;
             this.tabPage8.VerticalScrollbarHighlightOnWheel = false;
             this.tabPage8.VerticalScrollbarSize = 10;
@@ -351,6 +353,7 @@
             this.tabPage9.Size = new System.Drawing.Size(485, 313);
             this.tabPage9.TabIndex = 4;
             this.tabPage9.Text = "瀑布流";
+            this.tabPage9.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.tabPage9.VerticalScrollbarBarColor = false;
             this.tabPage9.VerticalScrollbarHighlightOnWheel = false;
             this.tabPage9.VerticalScrollbarSize = 10;

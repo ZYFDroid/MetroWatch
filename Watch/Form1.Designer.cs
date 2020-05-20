@@ -48,6 +48,9 @@
             this.lblTimeMs = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.tblDayCounter = new MetroFramework.Controls.MetroPanel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.lblDays = new System.Windows.Forms.Label();
             this.btnMore = new System.Windows.Forms.PictureBox();
             this.btnSave = new System.Windows.Forms.PictureBox();
             this.btnRecord = new System.Windows.Forms.PictureBox();
@@ -55,19 +58,16 @@
             this.btnPlay = new System.Windows.Forms.PictureBox();
             this.lblChoroMs = new System.Windows.Forms.Label();
             this.lblChoro = new System.Windows.Forms.Label();
-            this.tblDayCounter = new MetroFramework.Controls.MetroPanel();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.lblDays = new System.Windows.Forms.Label();
             this.contextMenuStrip1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
+            this.tblDayCounter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRecord)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnReset)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).BeginInit();
-            this.tblDayCounter.SuspendLayout();
             this.SuspendLayout();
             // 
             // renderTimer
@@ -242,6 +242,47 @@
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
             // 
+            // tblDayCounter
+            // 
+            this.tblDayCounter.Controls.Add(this.metroLabel1);
+            this.tblDayCounter.Controls.Add(this.lblDays);
+            this.tblDayCounter.HorizontalScrollbarBarColor = true;
+            this.tblDayCounter.HorizontalScrollbarHighlightOnWheel = false;
+            this.tblDayCounter.HorizontalScrollbarSize = 10;
+            this.tblDayCounter.Location = new System.Drawing.Point(13, 9);
+            this.tblDayCounter.Name = "tblDayCounter";
+            this.tblDayCounter.Size = new System.Drawing.Size(319, 38);
+            this.tblDayCounter.TabIndex = 16;
+            this.tblDayCounter.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.tblDayCounter.VerticalScrollbarBarColor = true;
+            this.tblDayCounter.VerticalScrollbarHighlightOnWheel = false;
+            this.tblDayCounter.VerticalScrollbarSize = 10;
+            this.tblDayCounter.Visible = false;
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.ForeColor = System.Drawing.Color.Chartreuse;
+            this.metroLabel1.Location = new System.Drawing.Point(272, 19);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(35, 19);
+            this.metroLabel1.TabIndex = 2;
+            this.metroLabel1.Text = "days";
+            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // lblDays
+            // 
+            this.lblDays.BackColor = System.Drawing.Color.Transparent;
+            this.lblDays.Font = new System.Drawing.Font("LESLIE", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDays.ForeColor = System.Drawing.Color.Chartreuse;
+            this.lblDays.Location = new System.Drawing.Point(11, 6);
+            this.lblDays.Margin = new System.Windows.Forms.Padding(0);
+            this.lblDays.Name = "lblDays";
+            this.lblDays.Size = new System.Drawing.Size(272, 32);
+            this.lblDays.TabIndex = 15;
+            this.lblDays.Text = "888";
+            this.lblDays.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            // 
             // btnMore
             // 
             this.btnMore.BackColor = System.Drawing.Color.Transparent;
@@ -334,47 +375,6 @@
             this.lblChoro.Text = "88:88:88";
             this.lblChoro.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
-            // tblDayCounter
-            // 
-            this.tblDayCounter.Controls.Add(this.metroLabel1);
-            this.tblDayCounter.Controls.Add(this.lblDays);
-            this.tblDayCounter.HorizontalScrollbarBarColor = true;
-            this.tblDayCounter.HorizontalScrollbarHighlightOnWheel = false;
-            this.tblDayCounter.HorizontalScrollbarSize = 10;
-            this.tblDayCounter.Location = new System.Drawing.Point(13, 9);
-            this.tblDayCounter.Name = "tblDayCounter";
-            this.tblDayCounter.Size = new System.Drawing.Size(319, 38);
-            this.tblDayCounter.TabIndex = 16;
-            this.tblDayCounter.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.tblDayCounter.VerticalScrollbarBarColor = true;
-            this.tblDayCounter.VerticalScrollbarHighlightOnWheel = false;
-            this.tblDayCounter.VerticalScrollbarSize = 10;
-            this.tblDayCounter.Visible = false;
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.ForeColor = System.Drawing.Color.Chartreuse;
-            this.metroLabel1.Location = new System.Drawing.Point(272, 19);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(35, 19);
-            this.metroLabel1.TabIndex = 2;
-            this.metroLabel1.Text = "days";
-            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // lblDays
-            // 
-            this.lblDays.BackColor = System.Drawing.Color.Transparent;
-            this.lblDays.Font = new System.Drawing.Font("LESLIE", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDays.ForeColor = System.Drawing.Color.Chartreuse;
-            this.lblDays.Location = new System.Drawing.Point(11, 6);
-            this.lblDays.Margin = new System.Windows.Forms.Padding(0);
-            this.lblDays.Name = "lblDays";
-            this.lblDays.Size = new System.Drawing.Size(272, 32);
-            this.lblDays.TabIndex = 15;
-            this.lblDays.Text = "888";
-            this.lblDays.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -389,6 +389,8 @@
             this.Text = "Metro Watch";
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.Activated += new System.EventHandler(this.Form1_Activated);
+            this.Deactivate += new System.EventHandler(this.Form1_Deactivate);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
             this.contextMenuStrip1.ResumeLayout(false);
@@ -397,13 +399,13 @@
             this.metroTabPage1.PerformLayout();
             this.metroTabPage2.ResumeLayout(false);
             this.metroTabPage2.PerformLayout();
+            this.tblDayCounter.ResumeLayout(false);
+            this.tblDayCounter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSave)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRecord)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnReset)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).EndInit();
-            this.tblDayCounter.ResumeLayout(false);
-            this.tblDayCounter.PerformLayout();
             this.ResumeLayout(false);
 
         }

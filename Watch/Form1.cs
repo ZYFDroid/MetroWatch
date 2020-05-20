@@ -37,8 +37,9 @@ namespace Watch
         public long getTotalTime()
         {
             long time = 0;
-            long lastStartTime = SystemClock;
+
             long systemClock = SystemClock;
+            long lastStartTime = systemClock;
             for (int i = 0; i < timers.Count; i++)
             {
                 if (i % 2 == 0)
@@ -173,8 +174,7 @@ namespace Watch
             {
                 if (getTotalTime() != 0)
                 {
-                   
-                    if (MessageBox.Show("是否覆盖当前的计时？", "打开计时", MessageBoxButtons.YesNo) != DialogResult.Yes) { return; }
+                    if (MetroMessageBox.Show(this,"是否覆盖当前的计时？", "打开计时", MessageBoxButtons.YesNo) != DialogResult.Yes) { return; }
                     
                 }
                 loadTime(openFileDialog1.FileName);
@@ -190,13 +190,13 @@ namespace Watch
             {
                 if (getTotalTime() == 0)
                 {
-                    
-                    MessageBox.Show("计时尚未开始，因此不能保存计时", "保存计时");
+
+                    MetroMessageBox.Show(this,"计时尚未开始，因此不能保存计时", "保存计时");
                     return;
                 }
                 saveTime(saveFileDialog1.FileName);
-                
-                MessageBox.Show("保存成功");
+
+                MetroMessageBox.Show(this,"保存成功","");
 
             }
             this.TopMost = tmp;
@@ -207,7 +207,7 @@ namespace Watch
             bool tmp = this.TopMost;
             this.TopMost = false;
             
-            if (MessageBox.Show("是否重置计时？", "是否重置计时", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MetroMessageBox.Show(this,"是否重置计时？", "是否重置计时", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 File.Delete(tempFilename);
                 timers.Clear();
@@ -220,13 +220,13 @@ namespace Watch
 
         private void 帮助ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("该计时器通过保存每次开始和停止的时间来实现在不启用程序的情况下持续计时，因此计时器启动之后，即使程序关闭、电脑关机，也能继续准确计时，计时过程中请不要修改系统时间。临时计时文件保存在程序目录下的" + tempFilename + "中\r\n可以保存和打开已有的计时器记录，包括已完成计时的以及正在计时的\r\n\r\n怀表版计时器和普通版计时器存档通用", "非易失性计时器帮助");
+            MetroMessageBox.Show(this,"该计时器通过保存每次开始和停止的时间来实现在不启用程序的情况下持续计时，因此计时器启动之后，即使程序关闭、电脑关机，也能继续准确计时，计时过程中请不要修改系统时间。临时计时文件保存在程序目录下的" + tempFilename + "中\r\n可以保存和打开已有的计时器记录，包括已完成计时的以及正在计时的\r\n\r\nMetro版计时器和怀表版计时器存档通用", "帮助");
             
         }
 
         private void 关于ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("非易失性计时器\r\n版本 " + Application.ProductVersion + " 怀表版\r\nZYFDroid Assistant Technology", "关于非易失性计时器");
+            MetroMessageBox.Show(this,"非易失性计时器\r\n版本 " + Application.ProductVersion + " Metro版\r\nZYFDroid", "关于");
         }
 
         private void Form1_SizeChanged(object sender, EventArgs e)
@@ -244,7 +244,7 @@ namespace Watch
             this.TopMost = false;
             bool paused = IsPaused;
             bool haveTime = timers.Count > 0;
-            if (!haveTime) { MessageBox.Show("尚未开始计时"); return; }
+            if (!haveTime) { MetroMessageBox.Show(this,"尚未开始计时",""); return; }
 
             if (!paused)
             {
@@ -284,7 +284,7 @@ namespace Watch
 
             bool tmp = this.TopMost;
             this.TopMost = false;
-            if (timers.Count == 0) {  MessageBox.Show("尚未开始计时"); this.TopMost = tmp; return; }
+            if (timers.Count == 0) {  MetroMessageBox.Show(this,"尚未开始计时",""); this.TopMost = tmp; return; }
             FormLongMsg flm = new FormLongMsg(this);
             flm.txtTimeTable.Text = makeTimeTable();
             flm.txtTimeTable.ReadOnly = true;
@@ -544,6 +544,16 @@ namespace Watch
             if (!(e.Button == MouseButtons.Left && mouseDown)) { return; }
             mouseDown = false;
             mnuRecordTimeComment_Click(sender, e);
+        }
+
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            renderTimer.Interval = 1;
+        }
+
+        private void Form1_Deactivate(object sender, EventArgs e)
+        {
+            renderTimer.Interval = 50;
         }
     }
     
