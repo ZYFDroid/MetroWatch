@@ -114,11 +114,14 @@ namespace Watch
         FontFamily digital;
         public FontFamily GetResoruceFont()
         {
-            var bytes = Properties.Resources.DIGITAL;
             System.Drawing.Text.PrivateFontCollection pfc = new System.Drawing.Text.PrivateFontCollection();
-            IntPtr MeAdd = Marshal.AllocHGlobal(bytes.Length);
-            Marshal.Copy(bytes, 0, MeAdd, bytes.Length);
-            pfc.AddMemoryFont(MeAdd, bytes.Length);
+            if (File.Exists("DIGITAL.TTF"))
+            {
+                pfc.AddFontFile("DIGITAL.TTF");
+            }
+            else if(File.Exists(Path.Combine(Path.GetTempPath(),"MetroWatch","DIGITAL.TTF"))) {
+                pfc.AddFontFile(Path.Combine(Path.GetTempPath(), "MetroWatch", "DIGITAL.TTF"));
+            }
             return (pfc.Families[0]);
         }
 

@@ -52,7 +52,6 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '\0';
-            this.textBox1.PromptText = "请输入时间消息";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.textBox1.SelectedText = "";
             this.textBox1.SelectionLength = 0;
