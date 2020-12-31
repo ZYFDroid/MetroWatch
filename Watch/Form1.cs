@@ -115,14 +115,29 @@ namespace Watch
         public FontFamily GetResoruceFont()
         {
             System.Drawing.Text.PrivateFontCollection pfc = new System.Drawing.Text.PrivateFontCollection();
-            if (File.Exists("DIGITAL.TTF"))
+            if (!File.Exists(Path.Combine(Path.GetTempPath(), "MetroWatch", "DIGITAL.TTF")))
             {
-                pfc.AddFontFile("DIGITAL.TTF");
+                makeFileExists(Properties.Resources.DIGITAL, Path.Combine(Path.GetTempPath(), "MetroWatch", "DIGITAL.TTF"));
             }
-            else if(File.Exists(Path.Combine(Path.GetTempPath(),"MetroWatch","DIGITAL.TTF"))) {
+            if(File.Exists(Path.Combine(Path.GetTempPath(),"MetroWatch","DIGITAL.TTF"))) {
                 pfc.AddFontFile(Path.Combine(Path.GetTempPath(), "MetroWatch", "DIGITAL.TTF"));
             }
             return (pfc.Families[0]);
+        }
+
+
+
+        public static void makeFileExists(byte[] data, String filename)
+        {
+            if (!Directory.Exists(Path.GetDirectoryName(filename)))
+            {
+                Directory.CreateDirectory(Path.GetDirectoryName(filename));
+            }
+            if (!File.Exists(filename))
+            {
+                File.WriteAllBytes(filename + ".tmp", data);
+                File.Move(filename + ".tmp", filename);
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
