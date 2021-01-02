@@ -112,15 +112,18 @@ namespace Watch
         }
 
         FontFamily digital;
+
+        private const string prefix = "MetroWatch_1000004";
+
         public FontFamily GetResoruceFont()
         {
             System.Drawing.Text.PrivateFontCollection pfc = new System.Drawing.Text.PrivateFontCollection();
-            if (!File.Exists(Path.Combine(Path.GetTempPath(), "MetroWatch", "DIGITAL.TTF")))
+            if (!File.Exists(Path.Combine(Path.GetTempPath(), prefix, "DIGITAL.TTF")))
             {
-                makeFileExists(Properties.Resources.DIGITAL, Path.Combine(Path.GetTempPath(), "MetroWatch", "DIGITAL.TTF"));
+                makeFileExists(Properties.Resources.DIGITAL, Path.Combine(Path.GetTempPath(), prefix, "DIGITAL.TTF"));
             }
-            if(File.Exists(Path.Combine(Path.GetTempPath(),"MetroWatch","DIGITAL.TTF"))) {
-                pfc.AddFontFile(Path.Combine(Path.GetTempPath(), "MetroWatch", "DIGITAL.TTF"));
+            if(File.Exists(Path.Combine(Path.GetTempPath(), prefix, "DIGITAL.TTF"))) {
+                pfc.AddFontFile(Path.Combine(Path.GetTempPath(), prefix, "DIGITAL.TTF"));
             }
             return (pfc.Families[0]);
         }

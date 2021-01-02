@@ -90,59 +90,59 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.ShowCheckMargin = true;
             this.contextMenuStrip1.ShowImageMargin = false;
-            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 148);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(149, 148);
             this.contextMenuStrip1.Style = MetroFramework.MetroColorStyle.Green;
             this.contextMenuStrip1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // mnuShowReport
             // 
             this.mnuShowReport.Name = "mnuShowReport";
-            this.mnuShowReport.Size = new System.Drawing.Size(152, 22);
+            this.mnuShowReport.Size = new System.Drawing.Size(148, 22);
             this.mnuShowReport.Text = "查看时间报告";
             this.mnuShowReport.Click += new System.EventHandler(this.mnuShowReport_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(145, 6);
             // 
             // 打开ToolStripMenuItem
             // 
             this.打开ToolStripMenuItem.Name = "打开ToolStripMenuItem";
-            this.打开ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.打开ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.打开ToolStripMenuItem.Text = "打开";
             this.打开ToolStripMenuItem.Click += new System.EventHandler(this.打开ToolStripMenuItem_Click);
             // 
             // 保存ToolStripMenuItem
             // 
             this.保存ToolStripMenuItem.Name = "保存ToolStripMenuItem";
-            this.保存ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.保存ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.保存ToolStripMenuItem.Text = "保存";
             this.保存ToolStripMenuItem.Click += new System.EventHandler(this.保存ToolStripMenuItem_Click);
             // 
             // 重置ToolStripMenuItem
             // 
             this.重置ToolStripMenuItem.Name = "重置ToolStripMenuItem";
-            this.重置ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.重置ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.重置ToolStripMenuItem.Text = "重置";
             this.重置ToolStripMenuItem.Click += new System.EventHandler(this.重置ToolStripMenuItem_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(149, 6);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(145, 6);
             // 
             // 帮助ToolStripMenuItem
             // 
             this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
-            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.帮助ToolStripMenuItem.Text = "帮助";
             this.帮助ToolStripMenuItem.Click += new System.EventHandler(this.帮助ToolStripMenuItem_Click);
             // 
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.关于ToolStripMenuItem.Text = "关于";
             this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
             // 
@@ -182,9 +182,9 @@
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.HorizontalScrollbarSize = 10;
             this.metroTabPage1.ImageKey = "(none)";
-            this.metroTabPage1.Location = new System.Drawing.Point(4, 36);
+            this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(350, 205);
+            this.metroTabPage1.Size = new System.Drawing.Size(350, 203);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "时钟";
             this.metroTabPage1.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -196,12 +196,12 @@
             // 
             this.lblTimeMs.AutoSize = true;
             this.lblTimeMs.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeMs.Font = new System.Drawing.Font("LESLIE", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimeMs.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimeMs.ForeColor = System.Drawing.Color.Chartreuse;
-            this.lblTimeMs.Location = new System.Drawing.Point(263, 71);
+            this.lblTimeMs.Location = new System.Drawing.Point(277, 71);
             this.lblTimeMs.Margin = new System.Windows.Forms.Padding(0);
             this.lblTimeMs.Name = "lblTimeMs";
-            this.lblTimeMs.Size = new System.Drawing.Size(69, 32);
+            this.lblTimeMs.Size = new System.Drawing.Size(71, 37);
             this.lblTimeMs.TabIndex = 6;
             this.lblTimeMs.Text = "888";
             this.lblTimeMs.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -209,12 +209,12 @@
             // lblTime
             // 
             this.lblTime.BackColor = System.Drawing.Color.Transparent;
-            this.lblTime.Font = new System.Drawing.Font("LESLIE", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.ForeColor = System.Drawing.Color.Chartreuse;
-            this.lblTime.Location = new System.Drawing.Point(13, 37);
+            this.lblTime.Location = new System.Drawing.Point(-1, 37);
             this.lblTime.Margin = new System.Windows.Forms.Padding(0);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(270, 69);
+            this.lblTime.Size = new System.Drawing.Size(300, 69);
             this.lblTime.TabIndex = 5;
             this.lblTime.Text = "88:88:88";
             this.lblTime.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -249,9 +249,9 @@
             this.tblDayCounter.HorizontalScrollbarBarColor = true;
             this.tblDayCounter.HorizontalScrollbarHighlightOnWheel = false;
             this.tblDayCounter.HorizontalScrollbarSize = 10;
-            this.tblDayCounter.Location = new System.Drawing.Point(13, 9);
+            this.tblDayCounter.Location = new System.Drawing.Point(13, 5);
             this.tblDayCounter.Name = "tblDayCounter";
-            this.tblDayCounter.Size = new System.Drawing.Size(319, 38);
+            this.tblDayCounter.Size = new System.Drawing.Size(319, 43);
             this.tblDayCounter.TabIndex = 16;
             this.tblDayCounter.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.tblDayCounter.VerticalScrollbarBarColor = true;
@@ -273,12 +273,13 @@
             // lblDays
             // 
             this.lblDays.BackColor = System.Drawing.Color.Transparent;
-            this.lblDays.Font = new System.Drawing.Font("LESLIE", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDays.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDays.ForeColor = System.Drawing.Color.Chartreuse;
             this.lblDays.Location = new System.Drawing.Point(11, 6);
             this.lblDays.Margin = new System.Windows.Forms.Padding(0);
             this.lblDays.Name = "lblDays";
-            this.lblDays.Size = new System.Drawing.Size(272, 32);
+            this.lblDays.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.lblDays.Size = new System.Drawing.Size(272, 37);
             this.lblDays.TabIndex = 15;
             this.lblDays.Text = "888";
             this.lblDays.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -352,12 +353,12 @@
             // 
             this.lblChoroMs.AutoSize = true;
             this.lblChoroMs.BackColor = System.Drawing.Color.Transparent;
-            this.lblChoroMs.Font = new System.Drawing.Font("LESLIE", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChoroMs.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChoroMs.ForeColor = System.Drawing.Color.Chartreuse;
-            this.lblChoroMs.Location = new System.Drawing.Point(263, 71);
+            this.lblChoroMs.Location = new System.Drawing.Point(277, 71);
             this.lblChoroMs.Margin = new System.Windows.Forms.Padding(0);
             this.lblChoroMs.Name = "lblChoroMs";
-            this.lblChoroMs.Size = new System.Drawing.Size(69, 32);
+            this.lblChoroMs.Size = new System.Drawing.Size(71, 37);
             this.lblChoroMs.TabIndex = 14;
             this.lblChoroMs.Text = "888";
             this.lblChoroMs.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -365,12 +366,12 @@
             // lblChoro
             // 
             this.lblChoro.BackColor = System.Drawing.Color.Transparent;
-            this.lblChoro.Font = new System.Drawing.Font("LESLIE", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChoro.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChoro.ForeColor = System.Drawing.Color.Chartreuse;
-            this.lblChoro.Location = new System.Drawing.Point(13, 37);
+            this.lblChoro.Location = new System.Drawing.Point(-1, 37);
             this.lblChoro.Margin = new System.Windows.Forms.Padding(0);
             this.lblChoro.Name = "lblChoro";
-            this.lblChoro.Size = new System.Drawing.Size(270, 69);
+            this.lblChoro.Size = new System.Drawing.Size(300, 69);
             this.lblChoro.TabIndex = 13;
             this.lblChoro.Text = "88:88:88";
             this.lblChoro.TextAlign = System.Drawing.ContentAlignment.BottomRight;
