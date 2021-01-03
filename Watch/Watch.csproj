@@ -140,7 +140,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ic_report.png" />
-    <None Include="Resources\ic_save.png" />
     <None Include="Resources\ic_more.png" />
     <None Include="Resources\ic_play.png" />
     <None Include="Resources\ic_pause.png" />

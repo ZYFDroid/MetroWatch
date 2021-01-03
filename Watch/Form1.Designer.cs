@@ -42,7 +42,6 @@
             this.GCTimer = new System.Windows.Forms.Timer(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.lblTimeMs = new System.Windows.Forms.Label();
@@ -58,6 +57,7 @@
             this.btnPlay = new System.Windows.Forms.PictureBox();
             this.lblChoroMs = new System.Windows.Forms.Label();
             this.lblChoro = new System.Windows.Forms.Label();
+            this.metroToolTip1 = new MetroFramework.Components.MetroToolTip();
             this.contextMenuStrip1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
@@ -90,15 +90,15 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.ShowCheckMargin = true;
             this.contextMenuStrip1.ShowImageMargin = false;
-            this.contextMenuStrip1.Size = new System.Drawing.Size(149, 148);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(185, 148);
             this.contextMenuStrip1.Style = MetroFramework.MetroColorStyle.Green;
             this.contextMenuStrip1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // mnuShowReport
             // 
             this.mnuShowReport.Name = "mnuShowReport";
-            this.mnuShowReport.Size = new System.Drawing.Size(148, 22);
-            this.mnuShowReport.Text = "查看时间报告";
+            this.mnuShowReport.Size = new System.Drawing.Size(184, 22);
+            this.mnuShowReport.Text = "查看时间报告和图表";
             this.mnuShowReport.Click += new System.EventHandler(this.mnuShowReport_Click);
             // 
             // toolStripSeparator2
@@ -182,9 +182,9 @@
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.HorizontalScrollbarSize = 10;
             this.metroTabPage1.ImageKey = "(none)";
-            this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage1.Location = new System.Drawing.Point(4, 36);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(350, 203);
+            this.metroTabPage1.Size = new System.Drawing.Size(350, 205);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "时钟";
             this.metroTabPage1.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -294,6 +294,7 @@
             this.btnMore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMore.TabIndex = 15;
             this.btnMore.TabStop = false;
+            this.metroToolTip1.SetToolTip(this.btnMore, "更多选项");
             this.btnMore.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnMore_MouseDown);
             this.btnMore.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnMore_MouseUp);
             // 
@@ -307,6 +308,7 @@
             this.btnSave.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnSave.TabIndex = 15;
             this.btnSave.TabStop = false;
+            this.metroToolTip1.SetToolTip(this.btnSave, "查看时间报告和图表");
             this.btnSave.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnMore_MouseDown);
             this.btnSave.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnSave_MouseUp);
             // 
@@ -320,6 +322,7 @@
             this.btnRecord.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnRecord.TabIndex = 15;
             this.btnRecord.TabStop = false;
+            this.metroToolTip1.SetToolTip(this.btnRecord, "记录时间点事件");
             this.btnRecord.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnMore_MouseDown);
             this.btnRecord.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnRecord_MouseUp);
             // 
@@ -333,6 +336,7 @@
             this.btnReset.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnReset.TabIndex = 15;
             this.btnReset.TabStop = false;
+            this.metroToolTip1.SetToolTip(this.btnReset, "重置计时器");
             this.btnReset.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnMore_MouseDown);
             this.btnReset.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnReset_MouseUp);
             // 
@@ -346,6 +350,7 @@
             this.btnPlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnPlay.TabIndex = 15;
             this.btnPlay.TabStop = false;
+            this.metroToolTip1.SetToolTip(this.btnPlay, "开始/暂停计时");
             this.btnPlay.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnMore_MouseDown);
             this.btnPlay.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnPlay_MouseUp);
             // 
@@ -375,6 +380,12 @@
             this.lblChoro.TabIndex = 13;
             this.lblChoro.Text = "88:88:88";
             this.lblChoro.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            // 
+            // metroToolTip1
+            // 
+            this.metroToolTip1.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroToolTip1.StyleManager = null;
+            this.metroToolTip1.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // Form1
             // 
@@ -426,7 +437,6 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem mnuShowReport;
-        private System.Windows.Forms.ToolTip toolTip1;
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
         private MetroFramework.Controls.MetroTabPage metroTabPage1;
         private MetroFramework.Controls.MetroTabPage metroTabPage2;
@@ -442,6 +452,7 @@
         private MetroFramework.Controls.MetroPanel tblDayCounter;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private System.Windows.Forms.Label lblDays;
+        private MetroFramework.Components.MetroToolTip metroToolTip1;
     }
 }
 
